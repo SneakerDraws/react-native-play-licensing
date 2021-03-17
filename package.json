@@ -1,0 +1,11 @@
+{
+  "name": "@icehunter/react-native-play-licensing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Icehunter/react-native-play-licensing.git",
+  "author": "Ryan Wilson <syndicated.life@gmail.com>",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}
