@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.android.vending.licensing;
+package com.google.android.vending.licensing;
 
-import com.android.vending.licensing.ILicenseResultListener;
+import com.google.android.vending.licensing.ILicenseResultListener;
 
 oneway interface ILicensingService {
   void checkLicense(long nonce, String packageName, in ILicenseResultListener listener);

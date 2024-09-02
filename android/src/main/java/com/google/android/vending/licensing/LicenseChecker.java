@@ -30,8 +30,8 @@ import android.os.RemoteException;
 import android.provider.Settings.Secure;
 import android.util.Log;
 
-import com.android.vending.licensing.ILicenseResultListener;
-import com.android.vending.licensing.ILicensingService;
+import com.google.android.vending.licensing.ILicenseResultListener;
+import com.google.android.vending.licensing.ILicensingService;
 import com.google.android.vending.licensing.util.Base64;
 import com.google.android.vending.licensing.util.Base64DecoderException;
 
@@ -132,7 +132,7 @@ public class LicenseChecker implements ServiceConnection {
      * recommend obfuscating the string that is passed into bindService using another method of your
      * own devising.
      * <p>
-     * source string: "com.android.vending.licensing.ILicensingService"
+     * source string: "com.google.android.vending.licensing.ILicensingService"
      * <p>
      * 
      * @param callback
@@ -155,7 +155,7 @@ public class LicenseChecker implements ServiceConnection {
                                     new Intent(
                                             new String(
                                                     // Base64 encoded -
-                                                    // com.android.vending.licensing.ILicensingService
+                                                    // com.google.android.vending.licensing.ILicensingService
                                                     // Consider encoding this in another way in your
                                                     // code to improve security
                                                     Base64.decode(
